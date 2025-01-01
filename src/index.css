@@ -1,9 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background: #27292c;
   color: white;
   height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -24,6 +37,16 @@ h1 {
 .nav-list-item {
   margin-left: 10px;
   font-size: 1.1rem;
+  border: 2px solid teal;
+  padding: .3em .7em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.nav-list-item:hover {
+  background-color: teal;
+  transition: ease;
+  transition-duration: .3s;
 }
 
 .nav-logo {
@@ -39,4 +62,8 @@ h1 {
   padding: 1em;
   background-color: black;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
